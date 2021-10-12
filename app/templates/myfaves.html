@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>My favorite things</h1>
+
+<p>Here are my favorite shapes of pasta</p>
+
+<ul>
+    {% for pasta in fav_pasta %}
+        <li> {{ pasta }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
